@@ -32,8 +32,14 @@ body{
     padding: 15px 10px;
 }
 
-.sidebar.active{
+.sidebar.toggle{
     width: 68px;
+}
+.sidebar.toggle .title{
+    display: none;
+}
+.sidebar.toggle .menu-bar span.text{
+    display: none;
 }
 .sidebar .header{
     margin-bottom: 25px;
@@ -52,9 +58,7 @@ font-size: 25px;
 font-weight: 500;
 }
 
-.sidebar.active .title{
-    display: none;
-}
+
 
 .sidebar .menu-bar{
     list-style-type: none;
@@ -76,9 +80,6 @@ font-weight: 500;
     display: flex;
     align-items: center;
     gap:20px;
-}
-.sidebar.active .menu-bar span.text{
-    display: none;
 }
 
 .sidebar .menu-bar li a:hover{
@@ -109,7 +110,7 @@ font-weight: 500;
     margin-top: 10px;
 }
 
-.sidebar.active ~ .main{
+.sidebar.toggle ~ .main{
     left: 90px;
     width: calc(100% - 90px);
 }
